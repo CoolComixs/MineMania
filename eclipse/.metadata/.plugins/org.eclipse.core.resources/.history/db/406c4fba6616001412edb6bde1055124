@@ -1,0 +1,42 @@
+package com.camp.main;
+
+import com.camp.lib.StringLibrary;
+
+import cpw.mods.fml.common.Mod;
+import cpw.mods.fml.common.Mod.EventHandler;
+import cpw.mods.fml.common.event.FMLInitializationEvent;
+import cpw.mods.fml.common.event.FMLPostInitializationEvent;
+import cpw.mods.fml.common.event.FMLPreInitializationEvent;
+
+@Mod(modid = StringLibrary.MODID, name = StringLibrary.name, version = StringLibrary.version)
+
+public class MainRegistry {
+
+	 /**
+	    * Loads before
+	    * @param PreEvent
+	    */
+	    @EventHandler
+	    public static void PreLoad(FMLPreInitializationEvent PreEvent) {
+	 
+	    }
+	 
+	    /**
+	    * Loads during
+	    * @param Event
+	    */
+	    @EventHandler
+	    public static void Load(FMLInitializationEvent Event) {    
+	 
+	    }   
+	 
+	    /**
+	    * Loads after
+	    * @param PostEvent
+	    */
+	    @EventHandler
+	    public static void PostLoad(FMLPostInitializationEvent PostEvent) {
+	 
+	    }
+	
+}

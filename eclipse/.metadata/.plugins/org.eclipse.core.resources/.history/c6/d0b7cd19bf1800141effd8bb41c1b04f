@@ -1,0 +1,32 @@
+package com.camp.recipe;
+
+import net.minecraft.init.Blocks;
+import net.minecraft.init.Items;
+import net.minecraft.item.ItemStack;
+
+import com.camp.block.BlockManager;
+import com.camp.item.ItemManager;
+
+import cpw.mods.fml.common.registry.GameRegistry;
+ 
+public class RecipeManager{
+ 
+    public static void mainRegistry(){
+        addCraftingRecipes();
+        addSmeltingRecipes();
+ 
+    }//end mainRegistry
+  
+ 
+    public static void addCraftingRecipes() {
+    	GameRegistry.addShapedRecipe(new ItemStack(ItemManager.customItem),"EEE", "EXE", "EEE", 'E', BlockManager.customBlock, 'X', Blocks.dragon_egg);
+    	GameRegistry.addShapedRecipe(new ItemStack(BlockManager.customBlock),"EOE", "EYE", "EOE", 'E', Blocks.emerald_block, 'Y', Items.ender_eye, 'O', Blocks.diamond_ore);
+    	GameRegistry.addShapedRecipe(new ItemStack(ItemManager.HB),"SDS", "STS", "CDC", 'S',Items.cake , 'D', Items.diamond, 'S', Items.stick);
+    }//end addCraftingRecipes    
+  
+ 
+    public static void addSmeltingRecipes() {    
+ 
+    }//end addSmeltingRecipes
+ 
+}//end class

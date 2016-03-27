@@ -1,0 +1,19 @@
+package com.camp.block;
+
+import com.jcraft.jorbis.Block;
+public class BlockManager {
+ 
+    public static void mainRegistry() {
+        initializeBlock();
+        registerBlock();
+    }
+    public static Block customBlock;
+    public static void initializeBlock() {
+ 
+    }
+ 
+    public static void registerBlock() {
+ 
+    }
+ 
+}

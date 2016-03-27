@@ -1,0 +1,30 @@
+package com.camp.entity;
+
+import net.minecraft.entity.EntityList;
+import net.minecraft.entity.EnumCreatureType;
+import net.minecraft.world.biome.BiomeGenBase;
+import cpw.mods.fml.common.registry.EntityRegistry;
+
+public class EntityManager {
+ 
+    public static void mainRegistry() {
+        registerEntity();
+       
+    }
+    public static void addSpawn(Class KillerMoo, int min, int max, EnumCreatureType type) {
+      	if (BiomeGenBase.getBiome(0) == BiomeGenBase.mushroomIsland) {
+    		
+    }
+        
+    }
+ 
+    public static void registerEntity() {
+    	createEntity(KillerMoo.class, "Killer Mooshrum", 0xC513D5, 0x3013D5);
+    }
+ 
+    public static void createEntity(Class KillerMoo, String entityName, int solidColor, int spotColor) {
+    	int entityId = EntityRegistry.findGlobalUniqueEntityId();
+        EntityRegistry.registerGlobalEntityID(KillerMoo, entityName, entityId);
+        EntityList.entityEggs.put(Integer.valueOf(entityId), new EntityList.EntityEggInfo(entityId, solidColor, spotColor)); 
+    }
+    }

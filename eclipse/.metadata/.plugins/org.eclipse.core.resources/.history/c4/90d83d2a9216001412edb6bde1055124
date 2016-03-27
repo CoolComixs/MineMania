@@ -1,0 +1,21 @@
+package com.camp.recipe;
+ 
+public class RecipeManager{
+ 
+    public static void mainRegistry(){
+        addCraftingRecipes();
+        addSmeltingRecipes();
+ 
+    }//end mainRegistry
+  
+ 
+    public static void addCraftingRecipes() {
+ 
+    }//end addCraftingRecipes    
+  
+ 
+    public static void addSmeltingRecipes() {    
+ 
+    }//end addSmeltingRecipes
+ 
+}//end class

@@ -1,0 +1,16 @@
+package com.camp.main;
+
+import net.minecraft.client.model.ModelBiped;
+
+import com.camp.entity.KillerMoo;
+import com.camp.render.RenderCustomBiped;
+
+import cpw.mods.fml.client.registry.RenderingRegistry;
+ 
+public class ClientProxy extends ServerProxy {
+ 
+    public void registerRenderThings() {        
+    	RenderingRegistry.registerBlockHandler(KillerMoo.class, new KillerMoo(new ModelBiped(), 0));
+    }
+ 
+}

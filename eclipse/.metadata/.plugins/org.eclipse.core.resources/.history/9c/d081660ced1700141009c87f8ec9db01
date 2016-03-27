@@ -1,0 +1,7 @@
+package com.camp.main;
+
+import net.minecraft.client.renderer.entity.RenderEntity;
+
+public class RenderCustomBiped extends RenderEntity {
+
+}

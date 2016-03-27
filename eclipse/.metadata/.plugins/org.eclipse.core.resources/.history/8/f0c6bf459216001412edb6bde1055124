@@ -1,0 +1,23 @@
+package com.camp.recipe;
+
+import cpw.mods.fml.common.registry.GameRegistry;
+ 
+public class RecipeManager{
+ 
+    public static void mainRegistry(){
+        addCraftingRecipes();
+        addSmeltingRecipes();
+ 
+    }//end mainRegistry
+  
+ 
+    public static void addCraftingRecipes() {
+    	GameRegistry.addShapedRecipe(new ItemStack(), params)
+    }//end addCraftingRecipes    
+  
+ 
+    public static void addSmeltingRecipes() {    
+ 
+    }//end addSmeltingRecipes
+ 
+}//end class

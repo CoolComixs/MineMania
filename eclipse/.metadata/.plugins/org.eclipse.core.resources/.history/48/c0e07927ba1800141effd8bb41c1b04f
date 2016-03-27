@@ -1,0 +1,7 @@
+package com.camp.item;
+
+import net.minecraft.item.Item;
+
+public class CustomFood extends Item {
+
+}

@@ -1,0 +1,9 @@
+package com.camp.main;
+ 
+public class ClientProxy extends ServerProxy {
+ 
+    public void registerRenderThings() {        
+    	RenderingRegistry.registerEntityRenderingHandler(CustomEntityMob.class, new RenderCustomBiped(new ModelBiped(), 0));
+    }
+ 
+}

@@ -1,0 +1,20 @@
+package com.camp.item;
+
+import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.item.Item;
+
+import com.camp.lib.StringLibrary;
+ 
+public class CustomItem extends ItemPickaxe {
+	
+	public CustomItem(ToolMaterial p_i45347_1_) {
+		this.setUnlocalizedName("CustomItem");
+		this.setCreativeTab(CreativeTabs.tabMisc);
+		this.setMaxDamage(64);
+		this.setMaxStackSize(1);
+		this.setTextureName(StringLibrary.MODID + ":BSword");
+		
+		
+	}
+ 
+}

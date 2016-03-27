@@ -1,0 +1,7 @@
+package com.camp.entity;
+
+import net.minecraft.entity.passive.EntityCow;
+
+public class KillerMoo extends EntityCow{
+
+}
